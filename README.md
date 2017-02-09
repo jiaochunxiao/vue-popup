@@ -11,4 +11,4 @@
 ## 效果截图
 
 ![enter description here][1]
-[1]: ./static/img/hello.png "1.png"
+[1]: ./src/assets/popup.gif
