@@ -98,5 +98,4 @@ import Popup from './components/Popup'
 
 ## 后记
 
-公司同事曾经做过基于Vue1.x的组件，本组件基于Vue2.x，并做了修改。
-
+公司同事曾经做过基于Vue1.x的组件，受启发，本组件基于Vue2.x，利用vue transition实现popup。
