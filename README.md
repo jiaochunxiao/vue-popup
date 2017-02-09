@@ -1,10 +1,33 @@
 # vue-popup
 基于vue2.x的popup弹层
 
+## 效果截图
+
+![enter description here][1]
+[1]: ./src/assets/popup.gif
 
 ## 使用场景
 
 主要用于移动端位于底部和顶部的弹层，显示信息，并有取消/确定/标题等元素。
+
+## demo运行
+
+1 git clone
+
+```
+git clone https://github.com/jiaochunxiao/vue-popup.git
+```
+2 进入到仓库文件夹
+```
+npm install
+//或者
+cnpm install
+```
+
+3 
+```
+npm run dev
+```
 
 ## 使用说明
 
@@ -69,7 +92,3 @@ import Popup from './components/Popup'
 }
 ```
 
-## 效果截图
-
-![enter description here][1]
-[1]: ./src/assets/popup.gif
