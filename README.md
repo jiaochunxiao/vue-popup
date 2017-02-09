@@ -1,6 +1,10 @@
 # vue-popup
 基于vue2.x的popup弹层
 
+## update
+
+* 2017-02-09 版本1.0.0
+
 ## 效果截图
 
 ![enter description here][1]
@@ -91,4 +95,8 @@ import Popup from './components/Popup'
     default: function(){}
 }
 ```
+
+## 后记
+
+公司同事曾经做过基于Vue1.x的组件，本组件基于Vue2.x，并做了修改。
 
