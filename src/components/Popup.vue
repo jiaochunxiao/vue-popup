@@ -31,6 +31,10 @@ export default{
 			type: Boolean,
 			default: false
 		},
+		'maskClose':{
+			type: Boolean,
+			default: true
+		},
 		'title':{
 			type: String,
 			default: '标题'
@@ -65,8 +69,10 @@ export default{
 	},
 	methods:{
 		hidePopup(){
-			this.$emit('hideFun');
-			this.show = false;
+			if(this.maskClose){
+				this.$emit('hideFun');
+				this.show = false;
+			}
 		},
 		cancelPopup(){
 			console.log('cancel');
@@ -164,24 +170,24 @@ export default{
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5){
   	.border-1px{
-      	&::after, &::before{
-        	-webkit-transform: scaleY(.7);
-        	-webkit-transform-origin: 0 0;
-        	transform: scaleY(.7);
-      	}
-      	&::after{
-        	-webkit-transform-origin: left bottom;
-      	}
+		&::after, &::before{
+			-webkit-transform: scaleY(.7);
+			-webkit-transform-origin: 0 0;
+			transform: scaleY(.7);
+		}
+		&::after{
+			-webkit-transform-origin: left bottom;
+		}
   	}
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2){
-  	.border-1px{
-      	&::after, &::before{
-          	-webkit-transform: scaleY(.5);
-          	transform: scaleY(.5);
-      	}
-  	}
+	.border-1px{
+		&::after, &::before{
+			-webkit-transform: scaleY(.5);
+			transform: scaleY(.5);
+		}
+	}
 }
 
 </style>

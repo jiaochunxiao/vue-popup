@@ -2,7 +2,7 @@
     <div id="app">
         <div class='top' @click='showPopup("top")'>从屏幕上方上滑入</div>
         <div class='bottom' @click='showPopup("bottom")'>从屏幕下方上滑入</div>
-        <Popup ref='top' from='top' @hideFun='hideFun' @showFun='showFun' @cancelFun='cancelFun' @confirmFun='confirmFun' :action-show='true'>
+        <Popup ref='top' from='top' @hideFun='hideFun' @showFun='showFun' @cancelFun='cancelFun' @confirmFun='confirmFun' :action-show='true' :mask-close='false'>
             <div class="test" >
                 我是从屏幕上方滑入的
             </div>
