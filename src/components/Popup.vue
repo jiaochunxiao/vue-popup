@@ -4,8 +4,8 @@
 		<transition :name=from>
 			<div class="popup-pannel" v-show='show' :class="[from]">
 				<div class="popup-action border-1px" v-if='actionShow'>
-					<span class="left" @click='cancelPopup' v-text='cancleText' v-if='cancleText'></span>
-					<span class='title' v-text='title' v-if='title'></span>
+					<span class="left" @click='cancelPopup' v-text='cancelText' v-if='cancelText'></span>
+					<span class='title' v-text='title'></span>
 					<span class="right" @click='confirmPopup' v-text='confirmText' v-if='confirmText'></span>
 				</div>
 				<div class="pop-content">
@@ -39,7 +39,7 @@ export default{
 			type: String,
 			default: '标题'
 		},
-		'cancleText':{
+		'cancelText':{
 			type: String,
 			default: '取消'
 		},
