@@ -125,24 +125,26 @@ export default{
 			bottom: 0;
 		}
 		.popup-action{
-			display: flex;
+			width: 100%;
 			height: .44rem;
 			border-bottom: 1px solid #efefef;
 			.left,
 			.right,
 			.title{
+				float: left;
+				display: inline-block;
 				height: 100%;
 				text-align: center;
 				line-height: .44rem;
 			}
 			.title{
-				flex: 1;
+				width: 60%; 
 				font-size: .18rem;
 				color: #666;
 			}
 			.left,
 			.right{
-				flex: 0 0 20%;
+				width: 20%;
 				font-size: .14rem;
 			}
 			.left{
