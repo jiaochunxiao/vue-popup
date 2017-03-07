@@ -2,12 +2,12 @@
     <div id="app">
         <div class='top' @click='showPopup("top")'>从屏幕上方上滑入</div>
         <div class='bottom' @click='showPopup("bottom")'>从屏幕下方上滑入</div>
-        <Popup ref='top' from='top' @hideFun='hideFun' @showFun='showFun' @cancelFun='cancelFun' @confirmFun='confirmFun' :action-show='true' :mask-close='false'>
+        <Popup ref='top' from='top' :show='topShow' @hideFun='hideFun' @showFun='showFun' @cancelFun='cancelFun' @confirmFun='confirmFun' :action-show='true' :mask-close='true'>
             <div class="test" >
                 我是从屏幕上方滑入的
             </div>
         </Popup>
-        <Popup ref='bottom'>
+        <Popup ref='bottom' :show='bottomShow'>
             <div class="test">
                 我是从屏幕下方滑入的
             </div>
@@ -22,21 +22,34 @@ export default {
   components: {
       Popup
   },
+  data() {
+      return {
+          topShow: false,
+          bottomShow: false
+      }
+  },
   methods:{
       showPopup(el){
-          this.$refs[el].show = true;
+          this[el + 'Show'] = true;
       },
       hideFun(){
-        console.log('hide popup');
+          console.log('hide popup');
+          this.resetPopup();
       },
       showFun(){
           console.log('show popup');
       },
       cancelFun(){
-        console.log('cancle popup');
+          console.log('cancle popup');
+          this.resetPopup();
       },
       confirmFun(){
           console.log('confirm popup');
+          this.resetPopup();
+      },
+      resetPopup(){
+          this.topShow = false;
+          this.bottomShow = false;
       }
   }
 }
