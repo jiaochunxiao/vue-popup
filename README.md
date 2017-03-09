@@ -6,6 +6,7 @@
 * 2017-02-09 版本1.0.0
 * 2017-02-09 版本1.0.1 增加mask点击是否需要关闭popup
 * 2017-02-10 版本1.0.1 popup操作区布局方式修改
+* 2017-03-08 版本1.0.2 fix warning by[liujianhuanzz](https://github.com/liujianhuanzz)
 
 ## 效果截图
 
@@ -30,7 +31,7 @@ npm install
 cnpm install
 ```
 
-3 
+3
 ```
 npm run dev
 ```
