@@ -11,7 +11,6 @@
 ## 效果截图
 
 ![enter description here][1]
-[1]: ./src/assets/popup.gif
 
 ## 使用场景
 
@@ -102,3 +101,5 @@ import Popup from './components/Popup'
 ## 后记
 
 公司同事曾经做过基于Vue1.x的组件，受启发，本组件基于Vue2.x，利用vue transition实现popup。
+
+[1]: ./src/assets/popup.gif
