@@ -8,9 +8,12 @@
 * 2017-02-10 版本1.0.1 popup操作区布局方式修改
 * 2017-03-08 版本1.0.2 fix warning by[liujianhuanzz](https://github.com/liujianhuanzz)
 
+[线上demo](https://jiaochunxiao.github.io/vue-popup/)
+
 
 ## 效果截图
-[线上demo](https://jiaochunxiao.github.io/vue-popup/)
+
+
 ![enter description here][1]
 
 ## 使用场景
